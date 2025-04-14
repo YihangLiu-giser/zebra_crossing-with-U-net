@@ -311,10 +311,10 @@ zebra_crossing-with-U-net/
 ![网络](./image/net.png)
 
 *部分结果可视化*
-![result](./image/图片1.png)
-![result](./image/图片2.png)
-![result](./image/图片3.png)
-![result](./image/图片4.png)
-![result](./image/图片5.png)
+![result](./image/图片1.png)  
+![result](./image/图片2.png)  
+![result](./image/图片3.png)  
+![result](./image/图片4.png)  
+![result](./image/图片5.png)  
 ```
 
