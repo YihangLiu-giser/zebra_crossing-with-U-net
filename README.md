@@ -46,7 +46,12 @@ zebra_crossing-with-U-net/
 ├── U_net.ipynb               # Contains: U-Net model definition, training process, test set evaluation, batch prediction on new images & visualization
 ├── image/
 │   ├── accuracy.png          # Example: Training curves
-│   └── U-net.png             # Example: U-Net model architecture diagram
+│   ├── U-net.png             # Example: U-Net model architecture diagram
+│   ├── 图片1.png             # Example: Result visualization 1
+│   ├── 图片2.png             # Example: Result visualization 2
+│   ├── 图片3.png             # Example: Result visualization 3
+│   ├── 图片4.png             # Example: Result visualization 4
+│   └── 图片5.png             # Example: Result visualization 5
 ├── requirements.txt          # List of project dependencies
 ├── unet_crosswalk_model_final.h5 # Trained model file (example name)
 └── README.md                 # This documentation file (containing both languages)
@@ -67,6 +72,7 @@ zebra_crossing-with-U-net/
 <your_prediction_input_path>/CampusZebra_new/  # Store images for prediction (e.g., resized to 1280x720 or any size)
 <your_prediction_output_path>/CampusZebra_result/ # Store predicted mask images (*_pred_mask.png)
 ```
+*(Note: Added result image examples to the file structure)*
 
 ## Environment Requirements and Setup
 
@@ -124,9 +130,9 @@ zebra_crossing-with-U-net/
     *   The script will load the model, process each image in `INPUT_IMAGE_DIR`, perform prediction, and save the generated grayscale mask images (zebra crossings as white/255) to `OUTPUT_MASK_DIR` with filenames like `<original_filename>_pred_mask.png`.
 
 3.  **Result Visualization**:
-    *   After prediction is complete (or if you already have prediction results), ensure `INPUT_IMAGE_DIR` and `OUTPUT_MASK_DIR` in Cell 6 point to the correct paths.
+    *   After prediction is complete (or if you already have prediction results), ensure Cell 6中的 `INPUT_IMAGE_DIR` and `OUTPUT_MASK_DIR` point to the correct paths.
     *   Run the part of Cell 6 that calls `visualize_predictions`.
-    *   You will see side-by-side comparisons of original images and their corresponding predicted masks in the notebook output or a popped-up Matplotlib window.
+    *   You will see side-by-side comparisons of original images and their corresponding predicted masks in the notebook output or a popped-up Matplotlib window. (This refers to the programmatic visualization, separate from the static images below).
 
 ## Model Architecture (U-Net)
 
@@ -153,7 +159,14 @@ This model is based on the standard U-Net architecture:
 ![Model Accuracy](./image/accuracy.png)
 
 *U-Net Architecture*
-![Network](./image/net.png)
+![Network](./image/U-net.png)
+
+*Partial Result Visualization*
+![result](./image/图片1.png)
+![result](./image/图片2.png)
+![result](./image/图片3.png)
+![result](./image/图片4.png)
+![result](./image/图片5.png)
 
 ---
 ## 中文 <a name="中文"></a>
@@ -199,8 +212,13 @@ zebra_crossing-with-U-net/
 ├── process_label.ipynb       # 包含：1. 通用图像尺寸调整工具 2. CDSet YOLO标签到PNG掩码的转换脚本
 ├── U_net.ipynb               # 包含：U-Net模型定义、训练流程、测试集评估、对新图像的批量预测与可视化
 ├── image/
-│   ├── 精度.png            # 示例：训练曲线 (Note: Use accuracy.png if filename is consistent)
-│   └── U-net.png             # 示例：U-Net模型结构图
+│   ├── accuracy.png          # 示例：训练曲线 (原文件名: 精度.png)
+│   ├── U-net.png             # 示例：U-Net模型结构图
+│   ├── 图片1.png             # 示例：结果可视化 1
+│   ├── 图片2.png             # 示例：结果可视化 2
+│   ├── 图片3.png             # 示例：结果可视化 3
+│   ├── 图片4.png             # 示例：结果可视化 4
+│   └── 图片5.png             # 示例：结果可视化 5
 ├── requirements.txt          # 项目依赖库列表
 ├── unet_crosswalk_model_final.h5 # 训练后保存的模型文件 (示例名称)
 └── README.md                 # 本说明文件
@@ -221,7 +239,7 @@ zebra_crossing-with-U-net/
 <your_prediction_input_path>/CampusZebra_new/  # 存放待预测的图像 (例如，已调整为1280x720或任意尺寸)
 <your_prediction_output_path>/CampusZebra_result/ # 存放预测生成的掩码图像 (*_pred_mask.png)
 ```
-*(Note: If the actual filename for accuracy is `精度.png`, keep it that way in the Chinese structure above. If it's `accuracy.png` for both, use that.)*
+*(Note: Added result image examples to the file structure)*
 
 ## 环境要求与设置
 
@@ -281,7 +299,7 @@ zebra_crossing-with-U-net/
 3.  **结果可视化**:
     *   预测完成后（或者如果你已有预测结果），确保 Cell 6 中的 `INPUT_IMAGE_DIR` 和 `OUTPUT_MASK_DIR` 指向正确的路径。
     *   运行 Cell 6 中调用 `visualize_predictions` 的部分。
-    *   将在 Notebook 输出或弹出的 Matplotlib 窗口中看到原始图像和对应预测掩码的并排对比。
+    *   将在 Notebook 输出或弹出的 Matplotlib 窗口中看到原始图像和对应预测掩码的并排对比。（注意：这是指代码生成的可视化，与下面的静态图片分开）
 
 ## 模型架构（U-Net）
 
@@ -308,13 +326,12 @@ zebra_crossing-with-U-net/
 ![模型精度](./image/accuracy.png)
 
 *U-Net网络结构*
-![网络](./image/net.png)
+![网络](./image/U-net.png)
 
 *部分结果可视化*
-![result](./image/图片1.png)  
-![result](./image/图片2.png)  
-![result](./image/图片3.png)  
-![result](./image/图片4.png)  
-![result](./image/图片5.png)  
+![result](./image/图片1.png)
+![result](./image/图片2.png)
+![result](./image/图片3.png)
+![result](./image/图片4.png)
+![result](./image/图片5.png)
 ```
-
