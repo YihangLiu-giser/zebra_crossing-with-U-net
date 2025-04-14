@@ -153,7 +153,7 @@ This model is based on the standard U-Net architecture:
 ![Model Accuracy](./image/accuracy.png)
 
 *U-Net Architecture*
-![Network](./image/U-net.png)
+![Network](./image/net.png)
 
 ---
 ## 中文 <a name="中文"></a>
