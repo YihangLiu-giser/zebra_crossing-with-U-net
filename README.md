@@ -159,14 +159,14 @@ This model is based on the standard U-Net architecture:
 ![Model Accuracy](./image/accuracy.png)
 
 *U-Net Architecture*
-![Network](./image/U-net.png)
+![Network](./image/net.png)
 
-*Partial Result Visualization*
-![result](./image/图片1.png)
-![result](./image/图片2.png)
-![result](./image/图片3.png)
-![result](./image/图片4.png)
-![result](./image/图片5.png)
+*Partial Result Visualization*  
+![result](./image/图片1.png)  
+![result](./image/图片2.png)  
+![result](./image/图片3.png)  
+![result](./image/图片4.png)  
+![result](./image/图片5.png)  
 
 ---
 ## 中文 <a name="中文"></a>
@@ -326,12 +326,11 @@ zebra_crossing-with-U-net/
 ![模型精度](./image/accuracy.png)
 
 *U-Net网络结构*
-![网络](./image/U-net.png)
+![网络](./image/net.png)
 
-*部分结果可视化*
-![result](./image/图片1.png)
-![result](./image/图片2.png)
-![result](./image/图片3.png)
-![result](./image/图片4.png)
-![result](./image/图片5.png)
-```
+*部分结果可视化*  
+![result](./image/图片1.png)  
+![result](./image/图片2.png)  
+![result](./image/图片3.png)  
+![result](./image/图片4.png)  
+![result](./image/图片5.png)  
