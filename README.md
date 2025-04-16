@@ -157,10 +157,6 @@ This model is based on the standard U-Net architecture:
     *   Performance may degrade under complex conditions like varying illumination, shadows, partial occlusions, road wear, etc., potentially leading to less precise segmentation boundaries or missed/false detections.
     *   ![Model Accuracy](./image/accuracy.png)
 
-
-*U-Net Architecture*
-![Network](./image/net.png)
-
 *Partial Result Visualization*  
 ![result](./image/图片1.png)  
 ![result](./image/图片2.png)  
@@ -324,8 +320,8 @@ zebra_crossing-with-U-net/
     *   模型在清晰、无遮挡的斑马线上表现良好。
     *   在光照变化、阴影、部分遮挡、道路磨损等复杂情况下，性能可能有所下降，分割边界可能不够精确或出现漏检/误检。
     *   *部分结果可视化*  
-      ![result](./image/图片1.png)  
-      ![result](./image/图片2.png)  
-      ![result](./image/图片3.png)  
-      ![result](./image/图片4.png)  
-      ![result](./image/图片5.png)  
+    *  ![result](./image/图片1.png)  
+    * ![result](./image/图片2.png)  
+    *  ![result](./image/图片3.png)  
+    *  ![result](./image/图片4.png)  
+    *  ![result](./image/图片5.png)  
