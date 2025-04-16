@@ -143,6 +143,7 @@ This model is based on the standard U-Net architecture:
 *   **Decoder**: 4 up-sampling blocks, each containing one 2x2 transpose convolution, concatenation with the corresponding encoder feature map (Skip Connection), and two 3x3 ReLU convolutions. Channel count decreases from 256 to 32.
 *   **Output Layer**: A 1x1 convolution maps channels to `NUM_CLASSES=2`, followed by `softmax` activation for pixel-wise probabilities, and finally a `linear` activation to ensure float32 output compatible with mixed precision.
 *   **Parameter Count**: Approximately 7.76 million.
+*   ![Network](./image/net.png)
 
 ## Experimental Results and Evaluation
 
@@ -154,9 +155,8 @@ This model is based on the standard U-Net architecture:
 *   **Visualization Results**:
     *   The model performs well on clear, unobstructed zebra crossings.
     *   Performance may degrade under complex conditions like varying illumination, shadows, partial occlusions, road wear, etc., potentially leading to less precise segmentation boundaries or missed/false detections.
+    *   ![Model Accuracy](./image/accuracy.png)
 
-*Model Training Metrics*
-![Model Accuracy](./image/accuracy.png)
 
 *U-Net Architecture*
 ![Network](./image/net.png)
