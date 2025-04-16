@@ -323,16 +323,9 @@ zebra_crossing-with-U-net/
 *   **可视化效果**:
     *   模型在清晰、无遮挡的斑马线上表现良好。
     *   在光照变化、阴影、部分遮挡、道路磨损等复杂情况下，性能可能有所下降，分割边界可能不够精确或出现漏检/误检。
-
-*模型训练指标*
-![模型精度](./image/accuracy.png)
-
-*U-Net网络结构*
-![网络](./image/net.png)
-
-*部分结果可视化*  
-![result](./image/图片1.png)  
-![result](./image/图片2.png)  
-![result](./image/图片3.png)  
-![result](./image/图片4.png)  
-![result](./image/图片5.png)  
+    *   *部分结果可视化*  
+      ![result](./image/图片1.png)  
+      ![result](./image/图片2.png)  
+      ![result](./image/图片3.png)  
+      ![result](./image/图片4.png)  
+      ![result](./image/图片5.png)  
